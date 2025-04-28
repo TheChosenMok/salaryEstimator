@@ -65,7 +65,7 @@ age = st.selectbox("What is your age group", list(age_map.keys()))
 coding_experience = st.selectbox("For how many years have you been coding/programming", list(coding_experience_map.keys()))
 company_size = st.selectbox("What is the size of your company where you are currently employed", list(company_size_map.keys()))
 education = st.selectbox("What is the highest level of formal education you have attained or plan to attain within the next 2 years", list(education_map.keys()))
-cuntry = st.selectbox("Which Country do you currently reside in", ["India", "United States of America", "Japan", "Brazil", "Nigeria",
+cuntry = st.selectbox("Which Country do you currently reside in", ["United States of America", "India", "Japan", "Brazil", "Nigeria",
     "Spain", "United Kingdom of Great Britain and Northern Ireland", "Mexico",
     "France", "Pakistan", "South Korea", "Canada", "Turkey", "Taiwan",
     "China", "Indonesia", "Russia", "Other"])
@@ -84,13 +84,13 @@ ml_incorporation = st.selectbox("Does your current employer incorporate machine 
 ])
 
 current_role = st.selectbox("Select the title most similar to your current role (or most recent title if retired):", [
-    "Data Analyst (Business, Marketing, Financial, Quantitative, etc)",
+    "Machine Learning/ MLops Engineer",
     "Data Architect",
     "Data Engineer",
     "Data Scientist",
     "Data Administrator",
     "Developer Advocate",
-    "Machine Learning/ MLops Engineer",
+    "Data Analyst (Business, Marketing, Financial, Quantitative, etc)",
     "Manager (Program, Project, Operations, Executive-level, etc)",
     "Research Scientist",
     "Software Engineer",
@@ -102,10 +102,10 @@ current_role = st.selectbox("Select the title most similar to your current role 
 ])
 
 industry = st.selectbox("In what industry is your current employer/contract (or your most recent employer if retired)?", [
-    "Academics/Education",
+    "Computers/Technology",
     "Accounting/Finance",
     "Broadcasting/Communications",
-    "Computers/Technology",
+    "Academics/Education",
     "Energy/Mining",
     "Government/Public Service",
     "Insurance/Risk Assessment",
