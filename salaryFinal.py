@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Load the trained regression model
-with open(r"salary2025_model.pkl", "rb") as f:
+with open("salary2025_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 st.title("💼 Salary Predictor")
@@ -215,3 +215,4 @@ X = pd.DataFrame([row])[model.feature_names_in_]   # ensures exact order
 if st.button("Predict Salary"):
     pred = model.predict(X)[0]
     st.success(f"Estimated yearly compensation: **${pred:,.0f}**")
+    
